@@ -6,6 +6,10 @@ import { checkSessionIdExists } from "../middlewares/check-session-id-exists";
 import { request } from "http";
 
 export async function transactionsRoutes(app: FastifyInstance) {
+  /* app.addHook("preHandler",async(request,reply)=>{
+    console.log("")
+  }); */
+
   app.get(
     "/",
     {
